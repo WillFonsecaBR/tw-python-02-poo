@@ -46,8 +46,15 @@ class Veiculo():
 
 ### ===============================================================
 ### DEFININDO NOVOS METODOS PARA ALTERAR AS PROPRIEDADES
+    """
+    PROPERTYS => As propertys servem para criar funções de modificação ou acesso
+                as propriedades de determinada classe;
+    """
     @property
     def cor (self):
+        """
+        EXEMPLO 1 => Neste exemplo temos somente o acesso ao valor do atributo cor;
+        """
         return self.__cor
 
     @property
@@ -60,6 +67,11 @@ class Veiculo():
 
     @property
     def qtd_combustivel(self):
+        """
+        EXEMPLO 2 => Neste exemplo temos o acesso ao valor do atributo e
+                    algumas tomadas de decisões que enviam uma mensagem ou o
+                    resultado do atributo qtd_combustivel;
+        """
         if self._qtd_combustivel > 0:
             print("O tanque esta vazio!")
         else:
